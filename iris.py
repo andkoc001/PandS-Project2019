@@ -9,3 +9,10 @@
 ###
 
 # Importing libraries
+import numpy as np
+import pandas as pd
+
+# Rading the csv data file, assigning variable to its content
+iris_dataset = pd.read_csv('iris_dataset.csv')
+
+print(iris_dataset)
