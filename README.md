@@ -20,61 +20,73 @@ ___
 
 ## Project research, excecution and findings
 
-### Research Plan (initial, to be developed in due course)
+### Research plan (initial, to be developed in due course)
 
-1. Introduction (to the project, data analysis, data sets, )
-2. Pythoin extensions and packages / modules
-   1. Matplotlib
-   2. Jupyter Notebook
-3. Fisher's Iris Data Set
+1. Introduction to the project
+2. Fisher's iris data set
    1. Origin
    2. Data set
-4. Data analysis
-   1. Basic statistical analysis
-   2. Data cleance
-   3. Classification, grupping, etc.
-5. Graphical interpretation
-6. Findings
+   3. Raw data
+   4. Meaning and significance
+   5. Python modules (Numpy, Pandas, Mathplotlib, Jupyter Notebook)
+3. Python Program
+   1. What (is the name), where (it is reposited), how (can be run)
+   2. Program execution - manual and instructions
+      1. Libraries and modules
+      2. Basic statistical info
+      3. ...
+4. Iris data set analysis - Findings
+   1. General findings
+   2. Basic statistical analysis
+   3. Data cleance
+   4. Classification, grupping, etc.
+   5. Graphical interpretation
+5. Conclusion
+   1. Ideas for further program development
+6. References
 
-### Task List (or rather just ideas catcher)
+### Task list (or rather just ideas catcher)
 
-- [ ] Average of each column  
+Basic statistical information
+
+- [ ] Average of each column
 - [ ] Average of each column with species discrimination  
 - [ ] Mean value of each column  
 - [ ] Mean value of each column with species discrimination  
 - [ ] Min and Max value  
 - [ ] Min and Max value with species discrimination  
-- [ ] Histogram  
+
+Graphical interpretation
+
+- [ ] Histogram
 - [ ] Scattered plot  
 
-### 1. Introduction
+___
 
-Even though Python is a general purpose programming language, it is highly acclaimed for its data anlysis capacity.
-
-There are some modules / libraries dedicated to data analysis, facilitating related activites, for example: **matplotlib**, **numpy**, or extensions, like **Jupyter Notebook**.
+## 1. Introduction
 
 This project is intened to introduce into data anlysis, on example of the Fisher's Iris data set.
 
-### 2. Fisher's Iris Data Set
+## 2. Fisher's iris data set
 
-Background of Fisher's Iris data set on Wikipedia page: <https://en.wikipedia.org/wiki/Iris_flower_data_set>. Further information can be found on many other websites, for example at Machine Learning Repository of University of California: <https://archive.ics.uci.edu/ml/datasets/iris>.
+### 2.1 Origin
+
+The data set is named after Ronald Fisher, a biologist. He made a significant contribition to development of statistics. The Iris data set is his fameus statistical description of three species of iris flowers. It contains measurements of 50 samples consisting length and width of sepals and petals for each species.
+
+Background of Fisher's Iris data set on Wikipedia page: <https://en.wikipedia.org/wiki/Iris_flower_data_set>, or on Machine Learning Repository of University of California: <https://archive.ics.uci.edu/ml/datasets/iris>.
+
+### 2.2 Iris data set
 
 The data set contains 3 classes (iris species: Iris Setosa, Iris Versicolour, Iris Virginica) of 50 instances each. The classes are described with the following attributes:
 
 1. sepal length in cm,
 2. sepal width in cm,
 3. petal length in cm,
-4. petal width in cm,
+4. petal width in cm.
 
-___
+### 2.3 Raw data analysis
 
-### 3. Project excecution
-
-I am creating a python file **`iris.py`** to perform some basic analysis.
-
-#### Raw data analysis
-
-Raw dataset obtained from: <http://archive.ics.uci.edu/ml/machine-learning-databases/iris/>
+Raw dataset obtained from: <http://archive.ics.uci.edu/ml/machine-learning-databases/iris/>.
 
 The first few rows look like this:  
 ![iris_dataset](iris_dataset.png)
@@ -84,11 +96,23 @@ A quick review of the raw data in the csv file reveals the following findings:
 1. The data set is organised in 5 columns (attributes) and 150 rows (instances).
 2. Columns 1 to 4 consist of `float` type numbers (lengths and widths of sepals and petals in cm), whereas 5th column is of `string` type (iris specis).
 
-#### Reading the csv file
+### 2.3 Meaning and significance of the data set
 
-~~Following the introductory course to Python 'Code with Mosh' (<https://codewithmosh.com>) to Python, where basic concepts of Machine Learning and Pandas package are briefly explained.~~
+### 2.4 Python as a tool for data analysis
+
+## 3. Python progam
+
+### 3.1 What, where
+
+The python program file name used to perform some basic data analysis is: **`iris.py`**.
+
+The program is reposited at: <https://github.com/andkoc001/PandS-Project2019>.
+
+### Python libraries and modules
 
 Inside my `irys.py`, after importing `Pandas` package, I include the folling snippet.
+
+### Reading the csv file
 
 ```Python
 iris_dataset = pandas.read_csv('iris_dataset.csv'))
