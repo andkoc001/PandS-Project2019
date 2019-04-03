@@ -4,7 +4,7 @@
 # Author: Andrzej Kocielski
 # Email: G00376291@gmit.ie
 # Date of creation: 31-03-2019
-# Last update: 31-03-2019
+# Last update: 03-04-2019
 
 ###
 
@@ -15,4 +15,7 @@ import pandas as pd
 # Rading the csv data file, assigning variable to its content
 iris_dataset = pd.read_csv('iris_dataset.csv')
 
-print(iris_dataset)
+print(iris_dataset)  # shows content of the data set
+
+# application of .describe() method - shows basic statistical information of the data set
+print(iris_dataset.describe())
