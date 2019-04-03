@@ -5,7 +5,7 @@
 >Email: G00376291@gmit.ie
 
 Created: 13-03-2019,
-Last update: 31-03-2019  
+Last update: 03-04-2019  
 
 ___
 
@@ -106,7 +106,9 @@ A quick review of the raw data in the csv file reveals the following findings:
 
 The python program file name used to perform some basic data analysis is: **`iris.py`**.
 
-The program is reposited at: <https://github.com/andkoc001/PandS-Project2019>.
+Also, a Jupyter Notebook for the project is created: **`PandS_Project_2019**.
+
+The program and the Jupyter Notebook are reposited at: <https://github.com/andkoc001/PandS-Project2019>.
 
 ### Python libraries and modules
 
