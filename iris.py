@@ -1,5 +1,5 @@
 # Title: Fisher's Iris Data Set Analysis
-# Description: Program is a playground for data analysis, as described in Readme.md file on Git Hub repository.
+# Description: Program is a result of the research project, as described in Readme.md file on Git Hub repository.
 # Context: Programming and Scripting, GMIT, 2019
 # Author: Andrzej Kocielski
 # Email: G00376291@gmit.ie
@@ -13,7 +13,8 @@ import numpy as np
 import pandas as pd
 
 # Rading the csv data file, assigning variable to its content
-iris_dataset = pd.read_csv('iris_dataset.csv')
+# Attribute header=None assumes that there is no header line in the raw csv file - the first row is actual data
+isd = pd.read_csv("iris_dataset.csv", header=None)
 
 print(iris_dataset)  # shows content of the data set
 
