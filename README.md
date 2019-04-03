@@ -106,7 +106,7 @@ A quick review of the raw data in the csv file reveals the following findings:
 
 The python program file name used to perform some basic data analysis is: **`iris.py`**.
 
-Also, a Jupyter Notebook for the project is created: **`PandS_Project_2019**.
+Also, a Jupyter Notebook for the project is created: **`PandS_Project_2019`**.
 
 The program and the Jupyter Notebook are reposited at: <https://github.com/andkoc001/PandS-Project2019>.
 
