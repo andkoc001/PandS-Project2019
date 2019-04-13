@@ -14,9 +14,9 @@ import pandas as pd
 
 # Rading the csv data file, assigning variable to its content
 # Attribute header=None assumes that there is no header line in the raw csv file - the first row is actual data
-isd = pd.read_csv("iris_dataset.csv", header=None)
+ids = pd.read_csv("iris_dataset.csv", header=None)
 
-print(iris_dataset)  # shows content of the data set
+print(ids)  # shows content of the data set
 
 # application of .describe() method - shows basic statistical information of the data set
-print(iris_dataset.describe())
+print(ids.describe())
