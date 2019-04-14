@@ -4,7 +4,7 @@
 # Author: Andrzej Kocielski
 # Email: G00376291@gmit.ie
 # Date of creation: 31-03-2019
-# Last update: 03-04-2019
+# Last update: 14-04-2019
 
 ###
 
@@ -16,7 +16,16 @@ import pandas as pd
 # Attribute header=None assumes that there is no header line in the raw csv file - the first row is actual data
 ids = pd.read_csv("iris_dataset.csv", header=None)
 
-print(ids)  # shows content of the data set
+# Content of the data (commented out for clarity)
+# print(ids)
+
+# head and tail methods print out n first / last respectively lines of data, where n is an argument of the method, default argument is n=5
+# http://www.datasciencemadesimple.com/head-and-tail-in-python-pandas/
+print(ids.head())
+print(ids.tail())
 
 # application of .describe() method - shows basic statistical information of the data set
 print(ids.describe())
+
+# Separation of the data per attributes (columns)
+# firstcol = ids[:, 0]
