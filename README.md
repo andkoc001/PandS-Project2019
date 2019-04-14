@@ -5,7 +5,7 @@
 >Email: G00376291@gmit.ie
 
 Created: 13-03-2019,
-Last update: 03-04-2019  
+Last update: 14-04-2019  
 
 ___
 
@@ -31,6 +31,8 @@ ___
 3. My analysis
    1. Python modules used (Numpy, Pandas, Mathplotlib, Jupyter Notebook)
    2. Program name and where it is reposited
+      1. Python program file: iris.py
+      2. Jupyter notebook file: PandS_Project_2019
    3. Program execution - manual and instructions
       1. How to run the program
       2. Some key variables - what is what (naming convention)
@@ -47,7 +49,7 @@ ___
    2. Ideas for further program development
 6. References
 
-### Task list (or rather just ideas catcher)
+### Tasks list (or rather just ideas catcher)
 
 Basic statistical information
 
@@ -140,7 +142,7 @@ Findings:
 
 ___
 
-### Loose notes
+### Loose notes, temporary
 
 From the lecture video, ..., regarding useful numpy methods, let's write:
 
@@ -179,7 +181,7 @@ ___
 
 ## References
 
-### Project related
+### Project and the data set related
 
 - Raw dataset obtained from: <http://archive.ics.uci.edu/ml/machine-learning-databases/iris/>
 - Wikipedia page on the Fisher's Iris data set: <https://en.wikipedia.org/wiki/Iris_flower_data_set>
@@ -202,9 +204,12 @@ ___
 - Anaconda User Guide: <https://docs.anaconda.com/anaconda/user-guide/>
 - Matplotlib documentation: <https://matplotlib.org/contents.html>
 - 10 Minutes to Pandas: <https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html>
+- Pandas tutorial: <http://www.datasciencemadesimple.com/head-and-tail-in-python-pandas/>
 - Pyplot Tutorial: <https://matplotlib.org/users/pyplot_tutorial.html>
 - Data visuaisation in Python: <https://medium.com/python-pandemonium/data-visualization-in-python-line-graph-in-matplotlib-9dfd0016d180>
 - Jupyter documentation: <https://jupyter.org/documentation>
+- Jupyter intro: <https://medium.com/ibm-data-science-experience/back-to-basics-jupyter-notebooks-dfcdc19c54bc>
+- Jupyter tips and tricks: <https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/>
 
 ### Github and Markdown
 

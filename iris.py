@@ -19,8 +19,7 @@ ids = pd.read_csv("iris_dataset.csv", header=None)
 # Content of the data (commented out for clarity)
 # print(ids)
 
-# head and tail methods print out n first / last respectively lines of data, where n is an argument of the method, default argument is n=5
-# http://www.datasciencemadesimple.com/head-and-tail-in-python-pandas/
+# head and tail methods print out n first / last respectively lines of data, where n is an argument of the method, default argument is n=5; source: http://www.datasciencemadesimple.com/head-and-tail-in-python-pandas/
 print(ids.head())
 print(ids.tail())
 
