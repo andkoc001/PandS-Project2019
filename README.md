@@ -104,7 +104,7 @@ The first few rows look like this:
 
 A quick review of the raw data in the csv file reveals the following findings:
 
-1. The data set is organised in 5 columns (attributes) and 150 rows (instances).
+1. The data set is organised in 5 columns (known as attributes or features) and 150 rows (known as instances).
 2. Columns 1 to 4 consist of `float` type numbers (lengths and widths of sepals and petals in cm), whereas 5th column is of `string` type (iris specis).
 
 ### 2.3 Meaning and significance of the data set

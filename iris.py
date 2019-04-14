@@ -16,12 +16,16 @@ import pandas as pd
 # Attribute header=None assumes that there is no header line in the raw csv file - the first row is actual data
 ids = pd.read_csv("iris_dataset.csv", header=None)
 
-# Content of the data (commented out for clarity)
+# Adding headers to attributes (columns); source: https://stackoverflow.com/a/28162530
+ids.columns = ["Sepal length, cm", "Sepal width, cm",
+               "Petal length, cm", "Petal width, cm", "Species"]
+
+# Content of the data (commented out for clarity - too long)
 # print(ids)
 
 # head and tail methods print out n first / last respectively lines of data, where n is an argument of the method, default argument is n=5; source: http://www.datasciencemadesimple.com/head-and-tail-in-python-pandas/
 print(ids.head())
-print(ids.tail())
+print(ids.tail(3))
 
 # application of .describe() method - shows basic statistical information of the data set
 print(ids.describe())
