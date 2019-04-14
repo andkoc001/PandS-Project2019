@@ -28,38 +28,47 @@ ___
    2. Data set
    3. Raw data
    4. Meaning and significance
-   5. Python modules (Numpy, Pandas, Mathplotlib, Jupyter Notebook)
-3. Python Program
-   1. What (is the name), where (it is reposited), how (can be run)
-   2. Program execution - manual and instructions
-      1. Libraries and modules
-      2. Basic statistical info
-      3. ...
-4. Iris data set analysis - Findings
-   1. General findings
+3. My analysis
+   1. Python modules used (Numpy, Pandas, Mathplotlib, Jupyter Notebook)
+   2. Program name and where it is reposited
+   3. Program execution - manual and instructions
+      1. How to run the program
+      2. Some key variables - what is what (naming convention)
+4. Iris data set analysis and specific findings
+   1. General comment
    2. Basic statistical analysis
    3. Data cleance
-   4. Classification, grupping, etc.
-   5. Graphical interpretation
+   4. Data break down and discrimination
+   5. Classification, grupping, etc.
+   6. Visualisation and interpretation
+   7. Pattern analysis
 5. Conclusion
-   1. Ideas for further program development
+   1. General findings
+   2. Ideas for further program development
 6. References
 
 ### Task list (or rather just ideas catcher)
 
 Basic statistical information
 
-- [ ] Average of each column
-- [ ] Average of each column with species discrimination  
-- [ ] Mean value of each column  
-- [ ] Mean value of each column with species discrimination  
 - [ ] Min and Max value  
-- [ ] Min and Max value with species discrimination  
+- [ ] Average of each column
+- [ ] Mean value of each column  
+- [ ] Standard diviation
 
-Graphical interpretation
+Data discrimination and classification
+
+- [ ] Min and Max value with species discrimination  
+- [ ] Average of each column with species discrimination  
+- [ ] Mean value of each column with species discrimination
+- [ ] Standard diviation of each column
+
+Visualisation and interpretation
 
 - [ ] Histogram
-- [ ] Scattered plot  
+- [ ] Scattered plot
+
+Pattern analysis
 
 ___
 
@@ -131,6 +140,8 @@ Findings:
 
 ___
 
+### Loose notes
+
 From the lecture video, ..., regarding useful numpy methods, let's write:
 
 ```Python
@@ -154,7 +165,7 @@ numpy.max(firstcol) # maximum element value
 To create a histogram:
 
 ```Python
-import matpoltlib.pyplot as pl
+import matplotlib.pyplot as pl
 pl.hist(firstcol)
 pl.show() # NB. it plots **the last*- calculation done
 ```
