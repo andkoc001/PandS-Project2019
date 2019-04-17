@@ -5,7 +5,7 @@
 >Email: G00376291@gmit.ie
 
 Created: 13-03-2019,
-Last update: 14-04-2019  
+Last update: 17-04-2019  
 
 ___
 
@@ -172,6 +172,10 @@ pl.hist(firstcol)
 pl.show() # NB. it plots **the last*- calculation done
 ```
 
+To distibute class
+# class distribution; source https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
+print(dataset.groupby('class').size())
+
 ___
 
 Learning about Jupyter Notebook - mostly through YouTube tutorials.
@@ -206,10 +210,14 @@ ___
 - 10 Minutes to Pandas: <https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html>
 - Pandas tutorial: <http://www.datasciencemadesimple.com/head-and-tail-in-python-pandas/>
 - Pyplot Tutorial: <https://matplotlib.org/users/pyplot_tutorial.html>
-- Data visuaisation in Python: <https://medium.com/python-pandemonium/data-visualization-in-python-line-graph-in-matplotlib-9dfd0016d180>
 - Jupyter documentation: <https://jupyter.org/documentation>
-- Jupyter intro: <https://medium.com/ibm-data-science-experience/back-to-basics-jupyter-notebooks-dfcdc19c54bc>
 - Jupyter tips and tricks: <https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/>
+
+### Data analysis
+
+- Totorial to data analysis: https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
+- Data visuaisation in Python: <https://medium.com/python-pandemonium/data-visualization-in-python-line-graph-in-matplotlib-9dfd0016d180>
+- Jupyter intro: <https://medium.com/ibm-data-science-experience/back-to-basics-jupyter-notebooks-dfcdc19c54bc>
 
 ### Github and Markdown
 
