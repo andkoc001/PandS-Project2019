@@ -172,9 +172,12 @@ pl.hist(firstcol)
 pl.show() # NB. it plots **the last*- calculation done
 ```
 
-To distibute class
-# class distribution; source https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
+To distibute species:
+
+```Python
+Species distribution; source <https://machinelearningmastery.com/machine-learning-in-python-step-by-step/>
 print(dataset.groupby('class').size())
+```
 
 ___
 
@@ -215,7 +218,7 @@ ___
 
 ### Data analysis
 
-- Totorial to data analysis: https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
+- Totorial to data analysis: <https://machinelearningmastery.com/machine-learning-in-python-step-by-step/>
 - Data visuaisation in Python: <https://medium.com/python-pandemonium/data-visualization-in-python-line-graph-in-matplotlib-9dfd0016d180>
 - Jupyter intro: <https://medium.com/ibm-data-science-experience/back-to-basics-jupyter-notebooks-dfcdc19c54bc>
 

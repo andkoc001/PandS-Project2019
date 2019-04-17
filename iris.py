@@ -31,9 +31,16 @@ print(ids.head())
 print(ids.tail(3))
 
 # Application of .describe() method - shows basic statistical information of the data set
-# print(ids.describe())
+print(ids.describe())
+
+# Histogram of the entire data set, not discriminating the species
+ids.hist()
+pl.show()
+
+# Pandas command `groupby` allows for separating the data set by attribut (of the function) passed in the attribute (of the method); source https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
+print(ids.groupby('Species').size())
 
 # Separation of the data per attributes (columns)
 # Confirming the type of the data set
-# Currently data type is DataFrame (consists of numbers and strings), meaning it cannont be sliced
-# print(type(ids)) # firstcol = ids[:, 0] # this command would produce a TypeError
+# firstcol = ids[:, 0] # this command would produce a TypeError. Currently data type is DataFrame (consists of numbers and strings), meaning it cannont be sliced
+print(type(ids))
