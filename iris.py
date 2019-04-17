@@ -11,6 +11,7 @@
 # Importing libraries
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as pl
 
 # Rading the csv data file, assigning variable to its content
 # Attribute header=None assumes that there is no header line in the raw csv file - the first row is actual data
@@ -25,10 +26,14 @@ ids.columns = ["Sepal length, cm", "Sepal width, cm",
 
 # head and tail methods print out n first / last respectively lines of data, where n is an argument of the method, default argument is n=5; source: http://www.datasciencemadesimple.com/head-and-tail-in-python-pandas/
 print(ids.head())
+# print(ids[49:51]) # This shows rows of index between 49 and 51 (incl. 49 bu excl. 51), where there is a change in the iris specie in the data set
+# print(ids[99:101]) # Shows rows index between 100 and 101
 print(ids.tail(3))
 
-# application of .describe() method - shows basic statistical information of the data set
-print(ids.describe())
+# Application of .describe() method - shows basic statistical information of the data set
+# print(ids.describe())
 
 # Separation of the data per attributes (columns)
-# firstcol = ids[:, 0]
+# Confirming the type of the data set
+# Currently data type is DataFrame (consists of numbers and strings), meaning it cannont be sliced
+# print(type(ids)) # firstcol = ids[:, 0] # this command would produce a TypeError
