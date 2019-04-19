@@ -4,7 +4,7 @@
 # Author: Andrzej Kocielski
 # Email: G00376291@gmit.ie
 # Date of creation: 31-03-2019
-# Last update: 14-04-2019
+# Last update: 19-04-2019
 
 ###
 
@@ -40,18 +40,31 @@ print(ids.describe())
 # Separation of the data per attributes (columns)
 # Confirming the type of the data set
 # firstcol = ids[:, 0] # this command would produce a TypeError. Currently data type is DataFrame (consists of numbers and strings), meaning it cannont be sliced
-print(type(ids))
+# print(type(ids)) # confirming the data type - commented out for clarity
 
 # Pandas command `groupby` allows for separating the data set by attribut (of the function) passed in the attribute (of the method); source https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
 print(ids.groupby('Species').size())
 
 
 # Split-out validation dataset; source https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
-array = ids.values  # changes datatype to `ndarray`
-# separates the columns with numerical values (first 4 columns); idsv - iris data set values
-idsv = array[:, 0:4]
-print(type(idsv))
+# changes datatype to `ndarray` and separates the columns with numerical values (first 4 columns); idsv - iris data set values
+idsv = ids.values[:, 0:4]
+# print(type(idsv)) # confirming the data type - commented out for clarity
 # separates the last column with the species names (50 setosas, 50 versicolors and 50 virginicas)
-spec_names = array[:, 4]
-print(type(spec_names))
+spec_names = ids.values[:, 4]
+# print(type(spec_names)) # confirming the data type - commented out for clarity
 # print(Y)
+
+# Further separation - slicing by attribute and species - first attributer of first 50 instances - sepal length of Iris Setosa
+sepal_l_setosa = idsv[0:49, 0]
+# minimum value of the subset, see next cell for results
+sels_min = np.min(sepal_l_setosa)  # minimum value of the subset
+sels_mean = np.mean(sepal_l_setosa)  # mean value of the subset
+sels_max = np.max(sepal_l_setosa)  # maximum value of the subset
+print(sels_min, sels_mean, sels_max)
+
+#  print(sepal_l_setosa)
+
+# histogram
+pl.hist(sepal_l_setosa)
+pl.show
