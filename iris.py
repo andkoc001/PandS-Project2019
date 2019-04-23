@@ -14,12 +14,12 @@ import pandas as pd
 import matplotlib.pyplot as pl
 
 # Rading the csv data file, assigning variable to its content
-# Attribute header=None assumes that there is no header line in the raw csv file - the first row is actual data
+# Attribute `header=None` assumes that there is no header line in the raw csv file - the first row is actual data
 ids = pd.read_csv("iris_dataset.csv", header=None)  # ids - iris data set
 
 # Adding headers to attributes (columns); source: https://stackoverflow.com/a/28162530
-ids.columns = ["Sepal length, cm", "Sepal width, cm",
-               "Petal length, cm", "Petal width, cm", "Species"]
+# SL - sepal length, SW - sepal width, Petal length, Petal width; all measurements in cm; class is one of 3 iris species
+ids.columns = ["SL", "SW", "PL", "PW", "Class"]
 
 # Content of the data (commented out for clarity - too long)
 # print(ids) # commented out for clarity only
@@ -66,5 +66,12 @@ print(sels_min, sels_mean, sels_max)
 #  print(sepal_l_setosa)
 
 # histogram
-pl.hist(sepal_l_setosa)
-pl.show
+# pl.hist(sepal_l_setosa)
+# pl.show
+
+
+print(ids.columns)
+
+# 2-D scatter plot; source: https://youtu.be/FLuqwQgSBDw?t=1069
+# idsv.plot(kind="scatter", X="Sepal length, cm", Y="Sepal width, cm")
+# pl.show()
