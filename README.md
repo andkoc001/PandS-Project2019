@@ -119,10 +119,14 @@ A quick review of the raw data in the csv file reveals the following findings:
 ### 2.5 Python libraries and modules
 
 1. Numpy
+   >NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays. - Wikipedia
 2. Pandas
+   >pandas is a software library written for the Python programming language for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series. - Wikipedia
 3. Matplotlib
+   >DescriptionMatplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy. - Wikipedia
+4. Seaborn
+   >Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics. - seaborn.pydata.org
   
-
 ### 2.6 What, where
 
 The analyis was initially intende to be carried out using Python scripts. However, in due course, the advantages of Jupyter Notbook tool has been  recognised, resulting in migration of the analysis from Python scripts to corresponding Jupyter Notebook.
@@ -137,18 +141,14 @@ The program and the Jupyter Notebook are reposited at: <https://github.com/andko
 
 The following are the variables used throughout the project - listed here for reference.
 
-| \#  | Variable    | Type      | Description                                 |
-| --- | ----------- | --------- | ------------------------------------------- |
-| 1   | `ids`       | DataFrame | iris data set - read from csv file          |
-| 2   | `isdv`      | ndarray   | iris data set with numerical values         |
-| 3   | `SL_setosa` | array     | subset with sepal length of Iris Setosa     |
-| 4   | `SL_versi`  | array     | subset with sepal length of Iris Versicolor |
-| 5   | `SL_virgi`  | array     | subset with sepal length of Iris Virginica  |
-| 6   | `SW_setosa` | array     | subset with sepal width of Iris Setosa      |
-| 7   | `SW_versi`  | array     | subset with sepal width of Iris Versicolor  |
-| 8   | `SW_virgi`  | array     | subset with sepal width of Iris Virginica   |
-|     |             |           |                                             |
-
+| \#  | Variable | Type      | Description                                 |
+| --- | -------- | --------- | ------------------------------------------- |
+| 1   | `ids`    | DataFrame | iris data set - read from csv file          |
+| 2   | `isd2`   | DataFrame | iris data set with species class as indices |
+| 3   | `setos`  | DataFrame | subset with Iris Setosa data                |
+| 4   | `versi`  | DataFrame | subset with Iris Versicolor data            |
+| 5   | `virgi`  | DataFrame | subset with Iris Virginica data             |
+|     |          |           |                                             |
 
 ## 3. Data set analysis
 
