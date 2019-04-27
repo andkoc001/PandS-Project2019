@@ -4,8 +4,12 @@
 # Author: Andrzej Kocielski
 # Email: G00376291@gmit.ie
 # Date of creation: 31-03-2019
-# Last update: 19-04-2019
+# Last update: 27-04-2019
 
+###
+# NOTE 27-04-2019
+# This .py file is disccontinued.
+# The project has been migrated and will be continued in corresponoding Jupyter Notebook.
 ###
 
 # Importing libraries
@@ -19,7 +23,7 @@ ids = pd.read_csv("iris_dataset.csv", header=None)  # ids - iris data set
 
 # Adding headers to attributes (columns); source: https://stackoverflow.com/a/28162530
 # SL - sepal length, SW - sepal width, Petal length, Petal width; all measurements in cm; class is one of 3 iris species
-ids.columns = ["SL", "SW", "PL", "PW", "Class"]
+ids.columns = ["SL", "SW", "PL", "PW", "Species"]
 
 # Content of the data (commented out for clarity - too long)
 # print(ids) # commented out for clarity only
@@ -69,9 +73,10 @@ print(sels_min, sels_mean, sels_max)
 # pl.hist(sepal_l_setosa)
 # pl.show
 
-
 print(ids.columns)
 
 # 2-D scatter plot; source: https://youtu.be/FLuqwQgSBDw?t=1069
 # idsv.plot(kind="scatter", X="Sepal length, cm", Y="Sepal width, cm")
 # pl.show()
+
+# Further development of the program has been migrated to corresponding Jupyter Notebook.
