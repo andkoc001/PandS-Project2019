@@ -1,13 +1,15 @@
-# Project for Programming and Scripting module at GMIT 2019 - Fisher's Iris Data Set
+# Fisher's Iris Data Set
 
 >Author: **Andrzej Kocielski**  
 >Github: [andkoc001](https://github.com/andkoc001/)  
 >Email: G00376291@gmit.ie
 
 Created: 13-03-2019,
-Last update: 17-04-2019  
+Last update: 27-04-2019  
 
 ___
+
+Project for Programming and Scripting module at GMIT 2019
 
 This repository documents my research, project progress (inluding comments for my future reference) and findings to the Fisher's Iris Data Set Project for the Programming and Scripting module, Galway-Mayo Institute of Technology, 2019.  
 
@@ -76,7 +78,9 @@ ___
 
 ## 1. Introduction
 
-This project is intened to introduce into data anlysis, on example of the Fisher's Iris data set.
+This project is intened to introduce into data anlysis on example of the Fisher's Iris data set. The data set was chosen for its relative simplicity and a rich literature reference.
+
+The intention of the project is to get practical understanding of handling data in Python environment, including data types and structures handling, data splicing, plots generation and interpretation.
 
 ## 2. Fisher's iris data set
 
@@ -95,7 +99,7 @@ The data set contains 3 classes (iris species: Iris Setosa, Iris Versicolour, Ir
 3. petal length in cm,
 4. petal width in cm.
 
-### 2.3 Raw data analysis
+### 2.3 Insight into raw data
 
 Raw dataset obtained from: <http://archive.ics.uci.edu/ml/machine-learning-databases/iris/>.
 
@@ -104,24 +108,33 @@ The first few rows look like this:
 
 A quick review of the raw data in the csv file reveals the following findings:
 
-1. The data set is organised in 5 columns (known as attributes or features) and 150 rows (known as instances).
-2. Columns 1 to 4 consist of `float` type numbers (lengths and widths of sepals and petals in cm), whereas 5th column is of `string` type (iris specis).
+1. The data set is organised in 5 columns - first 4 containing attributes (or features) and the last one describing the class, and 150 rows - instances.
+2. Each iris species has 50 instances of data.
+3. Columns 1 to 4 consist of `float` type numbers (lengths and widths of sepals and petals in cm), whereas 5th column is of `string` type (iris specis).
 
 ### 2.3 Meaning and significance of the data set
 
 ### 2.4 Python as a tool for data analysis
 
-## 3. Python progam
+### 2.5 Python libraries and modules
+
+1. Numpy
+2. Pandas
+3. Matplotlib
+  
+## 3. Data set analysis
 
 ### 3.1 What, where
 
-The python program file name used to perform some basic data analysis is: **`iris.py`**.
+The analyis was initially intende to be carried out using Python scripts. However, in due course, the advantages of Jupyter Notbook tool has been  recognised, resulting in migration of the analysis from Python scripts to corresponding Jupyter Notebook.
 
-Also, a Jupyter Notebook for the project is created: **`PandS_Project_2019`**.
+The initial python program file name used to perform some basic data analysis is: **`iris.py`**. This program was left unfinished, however, and the work was continued in Jupyter Notebook.
+
+A Jupyter Notebook for the project is created: **`PandS_Project_2019`**.
 
 The program and the Jupyter Notebook are reposited at: <https://github.com/andkoc001/PandS-Project2019>.
 
-### Python libraries and modules
+### Importing Python libraries and modules
 
 Inside my `irys.py`, after importing `Pandas` package, I include the folling snippet.
 
@@ -135,55 +148,9 @@ One of the methods of the Pandas package is `.describe()`. It can by called by t
 
 Next, I apply the `.describe()` method, which shows some information of the data set, like mean, average, etc.
 
-Findings:
+## Findings
 
-- aaaa  
-- ...
-
-___
-
-### Loose notes, temporary
-
-From the lecture video, ..., regarding useful numpy methods, let's write:
-
-```Python
-data = numpy.genfromtxt('raw_data_file.csv', delimiter=',')
-```
-
-then:
-
-```Python
-firstcol = data[:,0] # subset containing data
-```
-
-and then:
-
-```Python
-meanfirstcol = numpy.mean(firstcol) # average of first column
-numpy.min(firstcol) # minimum element value
-numpy.max(firstcol) # maximum element value
-```
-
-To create a histogram:
-
-```Python
-import matplotlib.pyplot as pl
-pl.hist(firstcol)
-pl.show() # NB. it plots **the last*- calculation done
-```
-
-To distibute species:
-
-```Python
-Species distribution; source <https://machinelearningmastery.com/machine-learning-in-python-step-by-step/>
-print(dataset.groupby('class').size())
-```
-
-___
-
-Learning about Jupyter Notebook - mostly through YouTube tutorials.
-Start Jupyter Notbook by typing in Terminal: `jupyter notebook`.
-___
+To be added...
 ___
 
 ## References
@@ -214,13 +181,14 @@ ___
 - Pandas tutorial: <http://www.datasciencemadesimple.com/head-and-tail-in-python-pandas/>
 - Pyplot Tutorial: <https://matplotlib.org/users/pyplot_tutorial.html>
 - Jupyter documentation: <https://jupyter.org/documentation>
+- Jupyter intro: <https://medium.com/ibm-data-science-experience/back-to-basics-jupyter-notebooks-dfcdc19c54bc>
 - Jupyter tips and tricks: <https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/>
 
 ### Data analysis
 
 - Totorial to data analysis: <https://machinelearningmastery.com/machine-learning-in-python-step-by-step/>
 - Data visuaisation in Python: <https://medium.com/python-pandemonium/data-visualization-in-python-line-graph-in-matplotlib-9dfd0016d180>
-- Jupyter intro: <https://medium.com/ibm-data-science-experience/back-to-basics-jupyter-notebooks-dfcdc19c54bc>
+- DataFrame tutorial: <https://www.datacamp.com/community/tutorials/pandas-tutorial-dataframe-python>
 
 ### Github and Markdown
 
