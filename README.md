@@ -129,33 +129,32 @@ The analyis was initially intende to be carried out using Python scripts. Howeve
 
 The initial python program file name used to perform some basic data analysis is: **`iris.py`**. This program was left unfinished, however, and the work was continued in Jupyter Notebook.
 
-A Jupyter Notebook for the project is created: **`PandS_Project_2019`**.
+A Jupyter Notebook for the project is created: **`PandS_Project_2019.ipynb`**.
 
 The program and the Jupyter Notebook are reposited at: <https://github.com/andkoc001/PandS-Project2019>.
 
 ### 2.7 Variables
 
-| \#  | Variable | Type | Description                        |
-| --- | -------- | ---- | ---------------------------------- |
-| 1   | `ids`    |      | iris data set - read from csv file |
-| 2   |          |      |
-| 3   |          |      |
+The following are the variables used throughout the project - listed here for reference.
+
+| \#  | Variable    | Type      | Description                                 |
+| --- | ----------- | --------- | ------------------------------------------- |
+| 1   | `ids`       | DataFrame | iris data set - read from csv file          |
+| 2   | `isdv`      | ndarray   | iris data set with numerical values         |
+| 3   | `SL_setosa` | array     | subset with sepal length of Iris Setosa     |
+| 4   | `SL_versi`  | array     | subset with sepal length of Iris Versicolor |
+| 5   | `SL_virgi`  | array     | subset with sepal length of Iris Virginica  |
+| 6   | `SW_setosa` | array     | subset with sepal width of Iris Setosa      |
+| 7   | `SW_versi`  | array     | subset with sepal width of Iris Versicolor  |
+| 8   | `SW_virgi`  | array     | subset with sepal width of Iris Virginica   |
+|     |             |           |                                             |
+
 
 ## 3. Data set analysis
 
-### Importing Python libraries and modules
+### Jupyter Notebook
 
-Inside my `irys.py`, I import `Numpy`, `Pandas`, `Matplotlib` packages.
-
-### Reading the csv file
-
-```Python
-iris_dataset = pandas.read_csv('iris_dataset.csv'))
-```
-
-One of the methods of the Pandas package is `.describe()`. It can by called by typing: `data_set.describe()`, where `data_set` is a given name to a `.csv` file.
-
-Next, I apply the `.describe()` method, which shows some information of the data set, like mean, average, etc.
+Analysis progress description has been included in the Jupyter Notebook `PandS_Project_2019.ipynb`.
 
 ## 4. Findings
 
