@@ -122,9 +122,8 @@ A quick review of the raw data in the csv file reveals the following findings:
 2. Pandas
 3. Matplotlib
   
-## 3. Data set analysis
 
-### 3.1 What, where
+### 2.6 What, where
 
 The analyis was initially intende to be carried out using Python scripts. However, in due course, the advantages of Jupyter Notbook tool has been  recognised, resulting in migration of the analysis from Python scripts to corresponding Jupyter Notebook.
 
@@ -134,9 +133,19 @@ A Jupyter Notebook for the project is created: **`PandS_Project_2019`**.
 
 The program and the Jupyter Notebook are reposited at: <https://github.com/andkoc001/PandS-Project2019>.
 
+### 2.7 Variables
+
+| \#  | Variable | Type | Description                        |
+| --- | -------- | ---- | ---------------------------------- |
+| 1   | `ids`    |      | iris data set - read from csv file |
+| 2   |          |      |
+| 3   |          |      |
+
+## 3. Data set analysis
+
 ### Importing Python libraries and modules
 
-Inside my `irys.py`, after importing `Pandas` package, I include the folling snippet.
+Inside my `irys.py`, I import `Numpy`, `Pandas`, `Matplotlib` packages.
 
 ### Reading the csv file
 
@@ -148,7 +157,7 @@ One of the methods of the Pandas package is `.describe()`. It can by called by t
 
 Next, I apply the `.describe()` method, which shows some information of the data set, like mean, average, etc.
 
-## Findings
+## 4. Findings
 
 To be added...
 ___
