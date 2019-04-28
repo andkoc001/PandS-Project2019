@@ -148,7 +148,7 @@ The following are the variables used throughout the project - listed here for re
 | 3   | `setos`  | DataFrame | subset with Iris Setosa data                |
 | 4   | `versi`  | DataFrame | subset with Iris Versicolor data            |
 | 5   | `virgi`  | DataFrame | subset with Iris Virginica data             |
-|     |          |           |                                             |
+
 
 ## 3. Data set analysis
 
@@ -158,7 +158,16 @@ Analysis progress description has been included in the Jupyter Notebook `PandS_P
 
 ## 4. Findings
 
-To be added...
+Iris data set analysis is primarily a classification problem. The results of the analysis, illustrated in the data plots, indicate that raw measurements of the flawers features can be a useful tool in determining the species. In some cases the raw data alone could yeald information about the iris species.
+
+The analysis I performed demonstrated that Iris Virginica can be well  identified by measurement of its petal and sepal dimensions. When compared to the dimensions of the other two species in question and visualised on appropriate plots (e.g. line plots or scatter plots), the measurements stand out from the measurements of the other species and can be easily discriminated.
+
+The Iris Setosa and Iris Versicolor are very similar in size of their sepald and petals. As a result it is very difficult to tell them apart. Here, again, the visualised data provide a significant help. Even thogh the interpretation of the results can be tricky and carries some level ofrisk related to inaccuracy, the graphs of the data can back the classification descision. Specificaly the petal length to petal width ratio can be helpful in distingushing the two species - compare the scatter plot in the Jupyter Notebook.
+
+## Conclusion
+
+Data analysis is a powerful technique in relation to objects classification and machine learning. The tools used in the project - Python language and its libraries - offer a lot of functionality, of which just few were utilised. Much more is still to be learnt.
+
 ___
 
 ## References
@@ -191,12 +200,17 @@ ___
 - Jupyter documentation: <https://jupyter.org/documentation>
 - Jupyter intro: <https://medium.com/ibm-data-science-experience/back-to-basics-jupyter-notebooks-dfcdc19c54bc>
 - Jupyter tips and tricks: <https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/>
+- Seaborn tutorial: <https://seaborn.pydata.org/tutorial.html>
 
 ### Data analysis
 
-- Totorial to data analysis: <https://machinelearningmastery.com/machine-learning-in-python-step-by-step/>
+- A Complete Tutorial to Learn Data Science with Python from Scratch: <https://www.analyticsvidhya.com/blog/2016/01/complete-tutorial-learn-data-science-python-scratch-2/>
+- The ultimate machine learning course with python in 6 steps: <https://copycoding.com/d/the-practical-guide-to-learn-machine-learning-with-python-in-12-steps->
+- Tutorial to data analysis: <https://machinelearningmastery.com/machine-learning-in-python-step-by-step/>
 - Data visuaisation in Python: <https://medium.com/python-pandemonium/data-visualization-in-python-line-graph-in-matplotlib-9dfd0016d180>
 - DataFrame tutorial: <https://www.datacamp.com/community/tutorials/pandas-tutorial-dataframe-python>
+- iris data analysis example: <https://www.slideshare.net/thoi_gian/iris-data-analysis-with-r>
+- Classifying Species of Iris Flowers: <https://www.kaggle.com/anthonyhills/classifying-species-of-iris-flowers>
 
 ### Github and Markdown
 
