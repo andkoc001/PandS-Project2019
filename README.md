@@ -5,80 +5,66 @@
 >Email: G00376291@gmit.ie
 
 Created: 13-03-2019,
-Last update: 27-04-2019  
+Last update: 28-04-2019  
 
 ___
 
 Project for Programming and Scripting module at GMIT 2019
 
-This repository documents my research, project progress (inluding comments for my future reference) and findings to the Fisher's Iris Data Set Project for the Programming and Scripting module, Galway-Mayo Institute of Technology, 2019.  
+This repository documents my research, project progress (including comments for my future reference) and findings to the Fisher's Iris Data Set Project for the Programming and Scripting module, Galway-Mayo Institute of Technology, 2019.  
 
 Lecturer: dr Ian McLoughlin
 
 The detailed Project instructions:
 <https://github.com/ianmcloughlin/project-pands/raw/master/project.pdf>  
-
 ___
 
-## Project research, excecution and findings
+## Project research, execution and findings
 
 ### Research plan (initial, to be developed in due course)
 
 1. Introduction to the project
 2. Fisher's iris data set
    1. Origin
-   2. Data set
-   3. Raw data
-   4. Meaning and significance
-3. My analysis
-   1. Python modules used (Numpy, Pandas, Mathplotlib, Jupyter Notebook)
-   2. Program name and where it is reposited
-      1. Python program file: iris.py
-      2. Jupyter notebook file: PandS_Project_2019
-   3. Program execution - manual and instructions
-      1. How to run the program
-      2. Some key variables - what is what (naming convention)
-4. Iris data set analysis and specific findings
-   1. General comment
-   2. Basic statistical analysis
-   3. Data cleance
-   4. Data break down and discrimination
-   5. Classification, grupping, etc.
-   6. Visualisation and interpretation
-   7. Pattern analysis
-5. Conclusion
-   1. General findings
-   2. Ideas for further program development
-6. References
+   2. Iris data set
+3. Python language as a tool for data analysis
+   1. Python language, libraries and modules
+   2. Insight into raw data
+   3. The data analysis
+   4. Variables
+4. Data set analysis
+   1. Jupyter Notebook
+5. Findings
+6. Conclusion  
+References
 
-### Tasks list (or rather just ideas catcher)
+### Tasks list ideas
 
 Basic statistical information
 
-- [ ] Min and Max value  
-- [ ] Average of each column
-- [ ] Mean value of each column  
-- [ ] Standard diviation
-
-Data discrimination and classification
-
-- [ ] Min and Max value with species discrimination  
-- [ ] Average of each column with species discrimination  
-- [ ] Mean value of each column with species discrimination
-- [ ] Standard diviation of each column
+- [x] Min and Max value  
+- [x] Average of each column
+- [x] Mean value of each column  
+- [x] Standard deviation
 
 Visualisation and interpretation
 
-- [ ] Histogram
-- [ ] Scattered plot
+- [x] Histogram
+- [x] Bar plot
+- [x] Line plot
+- [x] Scattered plot
+- [x] Linear regression
 
-Pattern analysis
+Future work
+
+- [ ] Pattern analysis
+- [ ] Machine learning
 
 ___
 
 ## 1. Introduction
 
-This project is intened to introduce into data anlysis on example of the Fisher's Iris data set. The data set was chosen for its relative simplicity and a rich literature reference.
+This project is intended to introduce into data analysis, based on example of the Fisher's Iris data set. The data set was chosen for its relative simplicity and a rich literature reference.
 
 The intention of the project is to get practical understanding of handling data in Python environment, including data types and structures handling, data splicing, plots generation and interpretation.
 
@@ -86,9 +72,11 @@ The intention of the project is to get practical understanding of handling data 
 
 ### 2.1 Origin
 
-The data set is named after Ronald Fisher, a biologist. He made a significant contribition to development of statistics. The Iris data set is his fameus statistical description of three species of iris flowers. It contains measurements of 50 samples consisting length and width of sepals and petals for each species.
+The data set is named after Ronald Fisher, a biologist. He made a significant contribution to development of statistics.
 
-Background of Fisher's Iris data set on Wikipedia page: <https://en.wikipedia.org/wiki/Iris_flower_data_set>, or on Machine Learning Repository of University of California: <https://archive.ics.uci.edu/ml/datasets/iris>.
+The iris flower exists in a number of species. For untrained eye they may look alike.
+
+![iris_flower](<img src="[drawing.jpg](https://upload.wikimedia.org/wikipedia/commons/4/49/Iris_germanica_%28Purple_bearded_Iris%29%2C_Wakehurst_Place%2C_UK_-_Diliff.jpg)" alt="iris_flower" width="200"/>)
 
 ### 2.2 Iris data set
 
@@ -99,7 +87,26 @@ The data set contains 3 classes (iris species: Iris Setosa, Iris Versicolour, Ir
 3. petal length in cm,
 4. petal width in cm.
 
-### 2.3 Insight into raw data
+The Iris data set is his fameus statistical description of three species of iris flowers. It contains measurements of 50 samples consisting length and width of sepals and petals for each species. The data gathered in the data set is a useful aid for the species discrimination and classification.
+
+Background of Fisher's Iris data set on Wikipedia page: <https://en.wikipedia.org/wiki/Iris_flower_data_set>, or on Machine Learning Repository of University of California: <https://archive.ics.uci.edu/ml/datasets/iris>.
+
+## 3 Python language as a tool for data analysis
+
+### 3.1 Python language, libraries and modules
+
+Python programming language is acclaimed for its capacity of handling large amount of data in scientific community of different specialisation. Its natural functionality has been extended by development of external libraries dedicated for specific purposes. Below are listed several I used for accomplishment of this project.
+
+1. Numpy
+   >NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays. - Wikipedia
+2. Pandas
+   >Pandas is a software library written for the Python programming language for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series. - Wikipedia
+3. Matplotlib
+   >Matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy. - Wikipedia
+4. Seaborn
+   >Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics. - seaborn.pydata.org
+  
+### 3.2 Insight into raw data
 
 Raw dataset obtained from: <http://archive.ics.uci.edu/ml/machine-learning-databases/iris/>.
 
@@ -110,26 +117,11 @@ A quick review of the raw data in the csv file reveals the following findings:
 
 1. The data set is organised in 5 columns - first 4 containing attributes (or features) and the last one describing the class, and 150 rows - instances.
 2. Each iris species has 50 instances of data.
-3. Columns 1 to 4 consist of `float` type numbers (lengths and widths of sepals and petals in cm), whereas 5th column is of `string` type (iris specis).
+3. Columns 1 to 4 consist of `float` type numbers (lengths and widths of sepals and petals in cm), whereas 5th column is of `string` type (iris species).
 
-### 2.3 Meaning and significance of the data set
+### 3.3 The data analisis
 
-### 2.4 Python as a tool for data analysis
-
-### 2.5 Python libraries and modules
-
-1. Numpy
-   >NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays. - Wikipedia
-2. Pandas
-   >pandas is a software library written for the Python programming language for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series. - Wikipedia
-3. Matplotlib
-   >DescriptionMatplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy. - Wikipedia
-4. Seaborn
-   >Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics. - seaborn.pydata.org
-  
-### 2.6 What, where
-
-The analyis was initially intende to be carried out using Python scripts. However, in due course, the advantages of Jupyter Notbook tool has been  recognised, resulting in migration of the analysis from Python scripts to corresponding Jupyter Notebook.
+The analysis was initially intended to be carried out using Python scripts. However, in due course, the advantages of Jupyter Notebook tool has been  recognised, resulting in migration of the analysis from Python scripts to corresponding Jupyter Notebook.
 
 The initial python program file name used to perform some basic data analysis is: **`iris.py`**. This program was left unfinished, however, and the work was continued in Jupyter Notebook.
 
@@ -137,7 +129,7 @@ A Jupyter Notebook for the project is created: **`PandS_Project_2019.ipynb`**.
 
 The program and the Jupyter Notebook are reposited at: <https://github.com/andkoc001/PandS-Project2019>.
 
-### 2.7 Variables
+### 3.4 Variables
 
 The following are the variables used throughout the project - listed here for reference.
 
@@ -149,24 +141,23 @@ The following are the variables used throughout the project - listed here for re
 | 4   | `versi`  | DataFrame | subset with Iris Versicolor data            |
 | 5   | `virgi`  | DataFrame | subset with Iris Virginica data             |
 
+## 4. Data set analysis
 
-## 3. Data set analysis
+### 4.1 Jupyter Notebook
 
-### Jupyter Notebook
+Analysis progress description and results have been recorded in the Jupyter Notebook `PandS_Project_2019.ipynb`.
 
-Analysis progress description has been included in the Jupyter Notebook `PandS_Project_2019.ipynb`.
+## 5. Findings
 
-## 4. Findings
-
-Iris data set analysis is primarily a classification problem. The results of the analysis, illustrated in the data plots, indicate that raw measurements of the flawers features can be a useful tool in determining the species. In some cases the raw data alone could yeald information about the iris species.
+Iris data set analysis is primarily a classification problem. The results of the analysis, illustrated in the data plots, indicate that raw measurements of the flowers features can be a useful tool in determining the species. In some cases the raw data alone could yield information about the iris species.
 
 The analysis I performed demonstrated that Iris Virginica can be well  identified by measurement of its petal and sepal dimensions. When compared to the dimensions of the other two species in question and visualised on appropriate plots (e.g. line plots or scatter plots), the measurements stand out from the measurements of the other species and can be easily discriminated.
 
-The Iris Setosa and Iris Versicolor are very similar in size of their sepald and petals. As a result it is very difficult to tell them apart. Here, again, the visualised data provide a significant help. Even thogh the interpretation of the results can be tricky and carries some level ofrisk related to inaccuracy, the graphs of the data can back the classification descision. Specificaly the petal length to petal width ratio can be helpful in distingushing the two species - compare the scatter plot in the Jupyter Notebook.
+The Iris Setosa and Iris Versicolor are very similar in size of their sepals and petals. As a result it is very difficult to tell them apart. Here, again, the visualised data provide a significant help. Even though the interpretation of the results can be tricky and carries some level of risk related to inaccuracy, the graphs of the data can back the classification decision. Specifically the petal length to petal width ratio can be helpful in distinguishing the two species - compare the scatter plot in the Jupyter Notebook.
 
-## Conclusion
+## 6. Conclusion
 
-Data analysis is a powerful technique in relation to objects classification and machine learning. The tools used in the project - Python language and its libraries - offer a lot of functionality, of which just few were utilised. Much more is still to be learnt.
+Data analysis is a powerful technique in relation to objects classification and machine learning. The tools used in the project - Python language and its libraries - offer a lot of functionality, of which just few were utilised. Much more is still to be learnt. One of many things that could yet be done is pattern analysis and machine learning algorithm. These, however, will be carried out under another project.
 
 ___
 
@@ -207,7 +198,7 @@ ___
 - A Complete Tutorial to Learn Data Science with Python from Scratch: <https://www.analyticsvidhya.com/blog/2016/01/complete-tutorial-learn-data-science-python-scratch-2/>
 - The ultimate machine learning course with python in 6 steps: <https://copycoding.com/d/the-practical-guide-to-learn-machine-learning-with-python-in-12-steps->
 - Tutorial to data analysis: <https://machinelearningmastery.com/machine-learning-in-python-step-by-step/>
-- Data visuaisation in Python: <https://medium.com/python-pandemonium/data-visualization-in-python-line-graph-in-matplotlib-9dfd0016d180>
+- Data visualisation in Python: <https://medium.com/python-pandemonium/data-visualization-in-python-line-graph-in-matplotlib-9dfd0016d180>
 - DataFrame tutorial: <https://www.datacamp.com/community/tutorials/pandas-tutorial-dataframe-python>
 - iris data analysis example: <https://www.slideshare.net/thoi_gian/iris-data-analysis-with-r>
 - Classifying Species of Iris Flowers: <https://www.kaggle.com/anthonyhills/classifying-species-of-iris-flowers>
@@ -217,3 +208,7 @@ ___
 - An Introduction to Version Control Using GitHub Desktop: <https://programminghistorian.org/en/lessons/getting-started-with-github-desktop>
 - Mastering Markdown: <https://guides.github.com/features/mastering-markdown/>
 - Markdownlint Rules: <https://github.com/DavidAnson/markdownlint/blob/v0.12.0/doc/Rules.md>
+
+### Fellow students
+
+Much inspiration, ideas, directions and solutions throughout the project has been obtained from my fellow students of the course. Thank you all for your great help!
