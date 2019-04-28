@@ -76,7 +76,7 @@ The data set is named after Ronald Fisher, a biologist. He made a significant co
 
 The iris flower exists in a number of species. For untrained eye they may look alike.
 
-![iris_flower](<img src="[drawing.jpg](https://upload.wikimedia.org/wikipedia/commons/4/49/Iris_germanica_%28Purple_bearded_Iris%29%2C_Wakehurst_Place%2C_UK_-_Diliff.jpg)" alt="iris_flower" width="200"/>)
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Iris_germanica_%28Purple_bearded_Iris%29%2C_Wakehurst_Place%2C_UK_-_Diliff.jpg" alt="Iris_flower" width="200"/>
 
 ### 2.2 Iris data set
 
