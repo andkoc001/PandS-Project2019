@@ -19,9 +19,7 @@ The detailed Project instructions:
 <https://github.com/ianmcloughlin/project-pands/raw/master/project.pdf>  
 ___
 
-## Project research, execution and findings
-
-### Research plan (initial, to be developed in due course)
+## Project research plan
 
 1. Introduction to the project
 2. Fisher's iris data set
@@ -37,29 +35,6 @@ ___
 5. Findings
 6. Conclusion  
 References
-
-### Tasks list ideas
-
-Basic statistical information
-
-- [x] Min and Max value  
-- [x] Average of each column
-- [x] Mean value of each column  
-- [x] Standard deviation
-
-Visualisation and interpretation
-
-- [x] Histogram
-- [x] Bar plot
-- [x] Line plot
-- [x] Scattered plot
-- [x] Linear regression
-
-Future work
-
-- [ ] Pattern analysis
-- [ ] Machine learning
-
 ___
 
 ## 1. Introduction
